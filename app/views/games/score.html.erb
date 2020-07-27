@@ -1,0 +1,19 @@
+<h1>Result</h1>
+<p><%= @result %></p>
+<%= link_to "Play again", new_path %>
+<table>
+  <tr>
+    <th>word</th>
+    <th>score</th>
+  </tr>
+  <% @scores.each do |key, value| %>
+   <tr>
+      <td><%= key %></td>
+      <td><%= value %></td>
+   </tr>
+  <% end %>
+  <tr>
+    <td>TOTAL</td>
+    <td><strong><%= @sum %></strong></td>
+  </tr>
+</table>
